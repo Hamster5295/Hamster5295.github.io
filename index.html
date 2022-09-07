@@ -7,6 +7,35 @@
 
     <link rel="stylesheet" href="https://unpkg.com/mdui@1.0.2/dist/css/mdui.min.css" />
     <script src="https://unpkg.com/mdui@1.0.2/dist/js/mdui.min.js"></script>
+
+    <style>
+        @font-face {
+            font-family: AlimamaShuHeiTi-Bold;
+            src: url(https://puhuiti.oss-cn-hangzhou.aliyuncs.com/AlimamaShuHeiTi/AlimamaShuHeiTi-Bold/AlimamaShuHeiTi-Bold.eot) format('embedded-opentype'),
+                url(https://puhuiti.oss-cn-hangzhou.aliyuncs.com/AlimamaShuHeiTi/AlimamaShuHeiTi-Bold/AlimamaShuHeiTi-Bold.otf) format('opentype'),
+                url(https://puhuiti.oss-cn-hangzhou.aliyuncs.com/AlimamaShuHeiTi/AlimamaShuHeiTi-Bold/AlimamaShuHeiTi-Bold.ttf) format('TrueType'),
+                url(https://puhuiti.oss-cn-hangzhou.aliyuncs.com/AlimamaShuHeiTi/AlimamaShuHeiTi-Bold/AlimamaShuHeiTi-Bold.woff) format('woff'),
+                url(https://puhuiti.oss-cn-hangzhou.aliyuncs.com/AlimamaShuHeiTi/AlimamaShuHeiTi-Bold/AlimamaShuHeiTi-Bold.woff2) format('woff2');
+        }
+
+        @font-face {
+            font-family: AlibabaPuHuiTi-2-55-Regular;
+            src: url(https://puhuiti.oss-cn-hangzhou.aliyuncs.com/AlibabaPuHuiTi-2/AlibabaPuHuiTi-2-55-Regular/AlibabaPuHuiTi-2-55-Regular.eot) format('embedded-opentype'),
+                url(https://puhuiti.oss-cn-hangzhou.aliyuncs.com/AlibabaPuHuiTi-2/AlibabaPuHuiTi-2-55-Regular/AlibabaPuHuiTi-2-55-Regular.otf) format('opentype'),
+                url(https://puhuiti.oss-cn-hangzhou.aliyuncs.com/AlibabaPuHuiTi-2/AlibabaPuHuiTi-2-55-Regular/AlibabaPuHuiTi-2-55-Regular.ttf) format('TrueType'),
+                url(https://puhuiti.oss-cn-hangzhou.aliyuncs.com/AlibabaPuHuiTi-2/AlibabaPuHuiTi-2-55-Regular/AlibabaPuHuiTi-2-55-Regular.woff) format('woff'),
+                url(https://puhuiti.oss-cn-hangzhou.aliyuncs.com/AlibabaPuHuiTi-2/AlibabaPuHuiTi-2-55-Regular/AlibabaPuHuiTi-2-55-Regular.woff2) format('woff2');
+        }
+    </style>
+    <style type="text/css">
+        .title-font {
+            font-family: AlimamaShuHeiTi-Bold;
+        }
+
+        .context-font {
+            font-family: AlibabaPuHuiTi-2-55-Regular;
+        }
+    </style>
 </head>
 
 <body>
@@ -21,7 +50,7 @@
         <div class="mdui-hidden-sm-down">
             <div class="mdui-row mdui-m-a-2 mdui-p-a-2 mdui-shadow-6 mdui-img-rounded">
                 <div class="mdui-row mdui-m-a-2">
-                    <div class="mdui-typo-display-1">关于我</div>
+                    <div class="mdui-typo-display-1 title-font">关于我</div>
                 </div>
                 <div class="mdui-row mdui-m-a-2 mdui-valign">
                     <i class="mdui-icon material-icons">person</i>
@@ -38,14 +67,20 @@
                 <div class="mdui-row mdui-m-a-2 mdui-valign">
                     <i class="mdui-icon material-icons">code</i>
                     <div class="mdui-typo-headline mdui-text-left mdui-m-l-2">
-                        语言: Java, C#, Python, C/C++; 游戏引擎: Unity, Godot
+                        语言: Java/Kotlin, C#, Python, C/C++, Dart
+                    </div>
+                </div>
+                <div class="mdui-row mdui-m-a-2 mdui-valign">
+                    <i class="mdui-icon material-icons">videogame_asset</i>
+                    <div class="mdui-typo-headline mdui-text-left mdui-m-l-2">
+                        游戏引擎: Unity, Godot
                     </div>
                 </div>
             </div>
 
             <div class="mdui-row mdui-m-a-2 mdui-m-t-4 mdui-p-a-2 mdui-shadow-6 mdui-img-rounded">
                 <div class="mdui-row mdui-m-a-2">
-                    <div class="mdui-typo-display-1">作品</div>
+                    <div class="mdui-typo-display-1 title-font">作品</div>
                 </div>
 
                 <div class="mdui-row mdui-m-a-2 ">
@@ -57,7 +92,7 @@
                                 <img src="the_stars.png" class="mdui-img-fluid" />
                                 <div class="mdui-card-media-covered mdui-card-media-covered-transparent">
                                     <div class="mdui-card-primary">
-                                        <div class="mdui-card-primary-title">星辰之上</div>
+                                        <div class="mdui-card-primary-title title-font">星辰之上</div>
                                         <div class="mdui-card-primary-subtitle">Rougelike 星战</div>
                                     </div>
                                 </div>
@@ -77,7 +112,7 @@
                                 <img src="poly_collision.jpg" class="mdui-img-fluid" />
                                 <div class="mdui-card-media-covered mdui-card-media-covered-transparent">
                                     <div class="mdui-card-primary">
-                                        <div class="mdui-card-primary-title">几何碰撞</div>
+                                        <div class="mdui-card-primary-title title-font">几何碰撞</div>
                                         <div class="mdui-card-primary-subtitle">简约 射击</div>
                                     </div>
                                 </div>
@@ -97,7 +132,7 @@
                                 <img src="the_defender.png" class="mdui-img-fluid" />
                                 <div class="mdui-card-media-covered mdui-card-media-covered-transparent">
                                     <div class="mdui-card-primary">
-                                        <div class="mdui-card-primary-title">The Defender</div>
+                                        <div class="mdui-card-primary-title title-font">The Defender</div>
                                         <div class="mdui-card-primary-subtitle">正在开发</div>
                                     </div>
                                 </div>
@@ -118,31 +153,37 @@
         <div class="mdui-hidden-md-up">
             <div class="mdui-row mdui-m-a-2 mdui-p-a-2 mdui-shadow-6 mdui-img-rounded">
                 <div class="mdui-row mdui-m-a-2">
-                    <div class="mdui-typo-display-3">关于我</div>
+                    <div class="mdui-typo-display-3 title-font">关于我</div>
                 </div>
                 <div class="mdui-row mdui-m-a-2 mdui-valign">
-                    <i class="mdui-icon material-icons">person</i>
-                    <div class="mdui-typo-display-1 mdui-text-left mdui-m-l-2">
+                    <i class="mdui-icon material-icons mdui-typo-display-2">person</i>
+                    <div class="mdui-typo-display-2 mdui-text-left mdui-m-l-2 context-font mdui-p-l-1">
                         学生，独立游戏开发者，喜欢尝试新的框架与设计模式
                     </div>
                 </div>
                 <div class="mdui-row mdui-m-a-2 mdui-valign">
-                    <i class="mdui-icon material-icons">memory</i>
-                    <div class="mdui-typo-display-1 mdui-text-left mdui-m-l-2">
+                    <i class="mdui-icon material-icons mdui-typo-display-2">memory</i>
+                    <div class="mdui-typo-display-2 mdui-text-left mdui-m-l-2 context-font mdui-p-l-1">
                         非常喜欢仓鼠
                     </div>
                 </div>
                 <div class="mdui-row mdui-m-a-2 mdui-valign">
-                    <i class="mdui-icon material-icons">code</i>
-                    <div class="mdui-typo-display-1 mdui-text-left mdui-m-l-2">
-                        语言: Java, C#, Python, C/C++; 游戏引擎: Unity, Godot
+                    <i class="mdui-icon material-icons mdui-typo-display-2">code</i>
+                    <div class="mdui-typo-display-2 mdui-text-left mdui-m-l-2 context-font mdui-p-l-1">
+                        Java/Kotlin, C#, Python, C/C++, Dart
+                    </div>
+                </div>
+                <div class="mdui-row mdui-m-a-2 mdui-valign">
+                    <i class="mdui-icon material-icons mdui-typo-display-2">videogame_asset</i>
+                    <div class="mdui-typo-display-2 mdui-text-left mdui-m-l-2 context-font mdui-p-l-1">
+                        Unity, Godot
                     </div>
                 </div>
             </div>
 
             <div class="mdui-row mdui-m-a-2 mdui-m-t-4 mdui-p-a-2 mdui-shadow-6 mdui-img-rounded">
                 <div class="mdui-row mdui-m-a-2">
-                    <div class="mdui-typo-display-3">作品</div>
+                    <div class="mdui-typo-display-3 title-font">作品</div>
                 </div>
 
                 <div class="mdui-row mdui-m-a-2 ">
@@ -154,16 +195,16 @@
                                 <img src="the_stars.png" class="mdui-img-fluid" />
                                 <div class="mdui-card-media-covered mdui-card-media-covered-transparent">
                                     <div class="mdui-card-primary">
-                                        <div class="mdui-typo-display-3 mdui-m-a-1">星辰之上</div>
+                                        <div class="mdui-typo-display-3 mdui-m-a-1 title-font">星辰之上</div>
                                         <div class="mdui-typo-headline-opacity mdui-m-a-1">Rougelike 星战</div>
                                     </div>
                                 </div>
                             </div>
                             <div class="mdui-card-actions">
-                                <a href="https://www.taptap.com/app/184873"
-                                    class="mdui-btn mdui-ripple mdui-col-xs-3 mdui-valign" style="height: 60px;">
-                                    <b class="mdui-typo-headline">Taptap </b>
-                                    <i class="mdui-icon material-icons">keyboard_arrow_right</i>
+                                <a href="https://www.taptap.com/app/184873" class="mdui-btn mdui-ripple mdui-valign"
+                                    style="height: 80px;width: 200px;">
+                                    <b class="mdui-typo-headline mdui-center">Taptap </b>
+                                    <i class="mdui-icon material-icons mdui-center">keyboard_arrow_right</i>
                                 </a>
                             </div>
                         </div>
@@ -176,16 +217,16 @@
                                 <img src="poly_collision.jpg" class="mdui-img-fluid" />
                                 <div class="mdui-card-media-covered mdui-card-media-covered-transparent">
                                     <div class="mdui-card-primary">
-                                        <div class="mdui-typo-display-3 mdui-m-a-1">几何碰撞</div>
+                                        <div class="mdui-typo-display-3 mdui-m-a-1 title-font">几何碰撞</div>
                                         <div class="mdui-typo-headline-opacity mdui-m-a-1">简约 射击</div>
                                     </div>
                                 </div>
                             </div>
                             <div class="mdui-card-actions">
-                                <a href="https://www.taptap.com/app/184873"
-                                    class="mdui-btn mdui-ripple mdui-col-xs-3 mdui-valign" style="height: 60px;">
-                                    <b class="mdui-typo-headline">Taptap </b>
-                                    <i class="mdui-icon material-icons">keyboard_arrow_right</i>
+                                <a href="https://www.taptap.com/app/184873" class="mdui-btn mdui-ripple mdui-valign"
+                                    style="height: 80px;width: 200px;">
+                                    <b class="mdui-typo-headline mdui-center">Taptap </b>
+                                    <i class="mdui-icon material-icons mdui-center">keyboard_arrow_right</i>
                                 </a>
                             </div>
                         </div>
@@ -198,16 +239,16 @@
                                 <img src="the_defender.png" class="mdui-img-fluid" />
                                 <div class="mdui-card-media-covered mdui-card-media-covered-transparent">
                                     <div class="mdui-card-primary">
-                                        <div class="mdui-typo-display-3 mdui-m-a-1">The Defender</div>
+                                        <div class="mdui-typo-display-3 mdui-m-a-1 title-font">The Defender</div>
                                         <div class="mdui-typo-headline-opacity mdui-m-a-1">正在开发</div>
                                     </div>
                                 </div>
                             </div>
                             <div class="mdui-card-actions">
-                                <a href="https://www.taptap.com/app/184873"
-                                    class="mdui-btn mdui-ripple mdui-col-xs-3 mdui-valign" style="height: 60px;">
-                                    <b class="mdui-typo-headline">详情 </b>
-                                    <i class="mdui-icon material-icons">keyboard_arrow_right</i>
+                                <a href="https://www.taptap.com/app/184873" class="mdui-btn mdui-ripple mdui-valign"
+                                    style="height: 80px;width: 200px;">
+                                    <b class="mdui-typo-headline mdui-center">详情 </b>
+                                    <i class="mdui-icon material-icons mdui-center">keyboard_arrow_right</i>
                                 </a>
                             </div>
                         </div>
